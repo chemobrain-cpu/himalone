@@ -3,8 +3,6 @@ const { generateAcessToken } = require('../utils/util')
 const uuid = require("uuid")
 const { User } = require("../database/database")
 const jwt = require("jsonwebtoken")
-const AWS = require('aws-sdk')
-const config = require('../config'); // load configurations file
 
 module.exports = async (io) => {
     io.on('connection', async (socket) => {
