@@ -6,6 +6,10 @@ const jwt = require("jsonwebtoken")
 const mongoose = require("mongoose")
 
 
+Admin.find().then(data=>{
+    console.log(data)
+})
+
 module.exports.signup = async (req, res, next) => {
 
     try {
